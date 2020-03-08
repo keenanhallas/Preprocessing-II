@@ -296,6 +296,13 @@ img {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    margin: 0px auto;
+    width: 90%;
+    padding-bottom: 6%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -352,6 +359,7 @@ img {
   align-items: flex-start;
   border-bottom: 2px dashed lightgrey;
   padding-bottom: 1%;
+  margin-top: 3%;
 }
 @media (max-width: 500px) {
   .imgSection div {
