@@ -6,19 +6,34 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @tablet {
+        width: 90%;
+        margin: 0px auto;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @tablet {
+        width: 90%;
+        margin: 0px auto;
+        padding: 0px;
+      }
+
       img {
         border-radius: 10px;
+
+        @media @tablet {
+          width: 100%;
+        }
       }
     }
   }
@@ -26,6 +41,10 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @tablet {
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -35,12 +54,22 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @tablet {
+        padding-right: 0%;
+      }
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+
+    @media @tablet {
+      margin: 0px auto;
+      width: 90%;
+      padding-bottom: 6%;
+    }
 
     img {
       border-radius: 10px;
@@ -53,9 +82,74 @@
     display: flex;
     justify-content: space-between;
 
+    @media @tablet {
+      width: 90%;
+      margin: 0px auto;
+      flex-direction: column;
+      align-items: center;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @tablet {
+        width: 75%;
+      }
+
+      p {
+        @media @tablet {
+          padding: 0%;
+          font-size: 1.5rem;
+        }
+      }
     }
   }
 }// home
+
+.imgSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px auto;
+  width: 100%;
+
+  img {
+      width: 100%;
+      height: auto;
+      margin: 0%;
+      padding: 0%;
+
+      @media @tablet {
+        width: 90%;
+      }
+  }
+
+  div {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      border-bottom: 2px dashed lightgrey;
+      padding-bottom: 1%;
+      margin-top: 3%;
+
+      @media @tablet {
+        width: 90%;
+      }
+
+      h2 {
+          margin-top: 2%;
+      }
+  }
+}
+
+.btn {
+  .btnStyle(teal, white);
+  
+  @media @tablet {
+    width: 100%;
+    margin-top: 3%;
+    padding: 4% 0%;
+    background: rgb(1, 159, 187);
+  }
+}
