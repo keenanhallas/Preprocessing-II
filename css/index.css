@@ -212,7 +212,24 @@ img {
 }
 .imgSection div {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  border-bottom: 2px dashed lightgrey;
+  padding-bottom: 1%;
+}
+.imgSection div h2 {
+  margin-top: 2%;
+}
+.btn {
+  border: 1px solid;
+  width: 80%;
+  text-align: center;
+  font-size: 1.8rem;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background: teal;
+  color: white;
+  border-radius: 15px;
 }
 .footer {
   width: 100%;
